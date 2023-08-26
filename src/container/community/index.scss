@@ -1,0 +1,64 @@
+@use '../../style/layout.scss' as l;
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tab__title {
+  text-align: center;
+
+  padding-bottom: 12px;
+
+  color: #888;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+
+  border-bottom: 2px solid #e6e6e6;
+
+  cursor: pointer;
+}
+
+.tab--actived {
+  color: #121212;
+
+  border-bottom: 2px solid #121212;
+}
+
+.tab__text-title {
+  color: #121212;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tab__text {
+  color: #363636;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.tab__button {
+  padding: 16px 140px;
+
+  border-radius: 10px;
+  background: #f46f17;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+
+  transition: opacity 0.7s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7s;
+  }
+}
